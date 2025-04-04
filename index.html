@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="app-header">
+        <h1 class="app-title">FlipMail</h1>
+    </header>
+
+    <!-- Search Bar at the Very Top -->
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search emails...">
+    </div>
+
+    <!-- Email Layout (Left Sidebar + Right Content) -->
+    <div class="email-wrapper">
+        <!-- Left Sidebar (Inbox List) -->
+        <div class="sidebar">
+            <div>
+                <button id="inbox-btn" class="btn">Inbox</button>
+                <button id="trash-btn" class="btn">Trash</button>
+            </div>
+            <div class="email-list" id="email-list"></div>
+        </div>
+
+        <!-- Right Side (Email View) -->
+        <div class="main-content">
+            <div class="email-content" id="email-details">
+                <h2>Email Subject</h2>
+                <p><strong>From:</strong> Sender Name</p>
+                <p>Click on an email to view its content here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
